@@ -1,6 +1,8 @@
 NAME = cuda-toolkit
 VERSION    = 7.5.18
-RELEASE = 0
+RELEASE = 1
+MAJOR_VERSION = 7.0
+CUDNN_VERSION = 4.0
 
 DISTDIR = distro
 

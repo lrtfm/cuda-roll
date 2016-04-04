@@ -22,4 +22,5 @@ roll-cuda.*
 
 # ignore large src files
 src/nvidia-toolkit/cuda*.run
+src/nvidia-toolkit/cudnn*.tgz
 src/nvidia-driver/NVIDIA*.run
