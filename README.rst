@@ -10,9 +10,9 @@ Introduction
 ---------------
 This roll installs:
 
-+ NVIDIA Driver 361.45
-+ NVIDIA CUDA Toolkit 7.5.18
-+ NVIDIA CUDA Deep Neural Network library (cuDNN) 5
++ NVIDIA Driver 375.26
++ NVIDIA CUDA Toolkit 8.0.61
++ NVIDIA CUDA Deep Neural Network library (cuDNN) 5.1
 
 For more information about the NVIDIA CUDA Toolkit please see the official
 `NVIDIA developer website <http://developer.nvidia.com>`_

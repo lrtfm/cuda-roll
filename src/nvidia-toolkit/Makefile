@@ -72,9 +72,9 @@ install::
 	# install toolkit and samples in /opt 
 	mkdir -p $(DISTDIR)
 	/bin/bash $(TOOLKIT_DISTRO) -extract=`pwd`/$(DISTDIR)
-	/bin/bash $(DISTDIR)/cuda-linux*$(VERSION)-*.$(TOOLKIT_SUFFIX) -noprompt -nosymlink -prefix=$(PKGROOT)
+	/bin/bash $(DISTDIR)/cuda-linux64*$(VERSION)-*.$(TOOLKIT_SUFFIX) -noprompt -nosymlink -prefix=$(PKGROOT)
 	/bin/bash $(DISTDIR)/cuda-samples*$(VERSION)-*.$(TOOLKIT_SUFFIX) -noprompt -prefix=$(SAMPLES) -cudaprefix=$(PKGROOT)
-	/bin/tar --no-same-owner -xf cudnn-$(MAJOR_VERSION)-linux-x64-v$(CUDNN_VERSION)-ga.tgz -C $(PKGROOT)/../
+	/bin/tar --no-same-owner -xf cudnn-$(MAJOR_VERSION)-linux-x64-v$(CUDNN_VERSION).tgz -C $(PKGROOT)/../
 	# create samples rpm
 	rocks create package $(PKGROOT)/samples $(NAME)-samples version=$(VERSION) release=$(RELEASE)
 	mkdir -p $(REDHAT.ROOT)/RPMS/$(ARCH)
